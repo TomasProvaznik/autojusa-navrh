@@ -1,0 +1,272 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+main {
+  margin-top: 150px !important;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+main > h1 {
+  color: #20B2AA;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+main > h1:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #20B2AA;
+}
+
+main > h3 {
+  color: #666;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.dpf-filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.dpf-filter-link {
+  text-decoration: none;
+  color: inherit;
+  width: 30%;
+  min-width: 250px;
+  flex-grow: 1;
+  max-width: 350px;
+}
+
+.dpf-filter-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dpf-filter-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dpf-filter-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.dpf-filter-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.dpf-filter-card:hover .dpf-filter-image img {
+  transform: scale(1.05);
+}
+
+.dpf-filter-details {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.dpf-filter-name {
+  display: block;
+  color: #444;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.dpf-filter-price {
+  display: block;
+  color: #20B2AA;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.info-section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.info-section h1 {
+  color: #20B2AA;
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.info-section h1:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #20B2AA;
+}
+
+.info-section h3 {
+  color: #444;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.info-text {
+  color: #444;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.info-list {
+  margin-left: 30px;
+  color: #20B2AA;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.info-nested {
+  display: block;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.cta-section {
+  background-color: #20B2AA;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cta-section h1 {
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: white;
+  color: #20B2AA;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.cta-button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 992px) {
+  .dpf-filters-container {
+    gap: 20px;
+  }
+  
+  .dpf-filter-link {
+    width: calc(50% - 20px);
+    min-width: 200px;
+  }
+  
+  .dpf-filter-image {
+    height: 180px;
+  }
+  
+  main > h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dpf-filter-link {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .info-section {
+    padding: 20px;
+  }
+  
+  .info-section h1 {
+    font-size: 1.6rem;
+  }
+  
+  main > h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    padding: 20px 15px;
+  }
+  
+  .dpf-filter-image {
+    height: 160px;
+  }
+  
+  .info-section {
+    padding: 15px;
+  }
+  
+  .cta-section {
+    padding: 20px 15px;
+  }
+  
+  .cta-section h1 {
+    font-size: 1.4rem;
+  }
+  
+  main > h1 {
+    font-size: 1.6rem;
+  }
+}

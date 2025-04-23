@@ -1,0 +1,362 @@
+section:nth-of-type(1){
+    margin-top: 50px;
+}
+
+  #contact-persons {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  #contact-persons h1.section-title {
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  #contact-persons h1.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #20B2AA;
+  }
+  
+  .contacts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .contact-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .contact-image img {
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+  }
+  
+  .contact-card:hover .contact-image img {
+    transform: scale(1.05);
+  }
+  
+  .contact-details {
+    padding: 20px;
+  }
+  
+  .contact-details h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .contact-position {
+    color: #444;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .contact-info-pobocky {
+    margin-top: 15px;
+  }
+  
+  .contact-info-pobocky h3 {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    margin: 8px 0;
+    font-weight: normal;
+    color: #333;
+  }
+  
+  .contact-info-pobocky i {
+    color: #20B2AA;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+  }
+
+  #company-info {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  #company-info h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  #company-info h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #20B2AA;
+  }
+  
+  .info-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-container h3 {
+    color: #20B2AA;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .info-item {
+    display: block;
+    margin: 12px 0;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  #others {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  #others h1.section-title {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  #others h1.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #20B2AA;
+  }
+  
+  #others > h3 {
+    color: #666;
+    margin-bottom: 40px;
+    font-weight: normal;
+  }
+  
+  .services-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+  }
+  
+  .service-box {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    max-width: 450px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-box:not(:last-child):after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70%;
+    width: 1px;
+    background-color: #e0e0e0;
+  }
+  
+  .service-box h1 {
+    color: #20B2AA;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .service-box div {
+    color: #444;
+    margin: 10px 0;
+  }
+  
+  .service-box span {
+    display: block;
+    margin-top: 15px;
+    color: #666;
+    font-style: italic;
+  }
+  
+  .action-button {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .action-button a {
+    display: inline-block;
+    background-color: #20B2AA;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(32, 178, 170, 0.3);
+  }
+  
+  .action-button a:hover {
+    background-color: #1a9690;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(32, 178, 170, 0.4);
+  }
+  
+  #vehicle-purchase {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  #vehicle-purchase h1 {
+    color: #20B2AA;
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+  
+  #vehicle-purchase h3 {
+    color: #666;
+    margin: 30px 0;
+    font-weight: normal;
+  }
+
+  @media screen and (max-width: 992px) {
+    .contacts-container {
+      gap: 20px;
+    }
+    
+    .contact-card {
+      width: 280px;
+    }
+    .services-row {
+        gap: 30px;
+      }
+      
+      .service-box:not(:last-child):after {
+        right: -15px;
+      }
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contacts-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .contact-card {
+      width: 100%;
+      max-width: 350px;
+    }
+    
+    #contact-persons h1.section-title,
+    #company-info h1 {
+      font-size: 1.8rem;
+    }
+
+    .services-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+      }
+      
+      .service-box {
+        width: 100%;
+        max-width: 500px;
+      }
+      
+      .service-box:not(:last-child):after {
+        display: none;
+      }
+      
+      #others h1.section-title,
+      #vehicle-purchase h1 {
+        font-size: 1.8rem;
+      }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contact-card {
+      max-width: 300px;
+    }
+    
+    .info-container {
+      padding: 20px 15px;
+    }
+    
+    #contact-persons h1.section-title,
+    #company-info h1 {
+      font-size: 1.6rem;
+    }
+    .service-box {
+        padding: 20px 15px;
+      }
+      
+      .action-button a {
+        padding: 10px 25px;
+      }
+      
+      #others h1.section-title,
+      #vehicle-purchase h1 {
+        font-size: 1.6rem;
+      }
+
+  }

@@ -1,0 +1,148 @@
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    margin-top: 150px;
+}
+
+.tow-service-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tow-header {
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.tow-header h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.tow-header h3 {
+    color: #666;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.tow-header:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #20B2AA;
+    margin: 25px auto 0;
+}
+
+.contact-info-tow {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: rgba(32, 178, 170, 0.05);
+    border-radius: 10px;
+}
+
+.contact-item-tow {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.contact-item-tow:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item-tow i {
+    color: #333;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.tow-image {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 40px 0;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.tow-image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(32, 178, 170, 0.3), transparent);
+    z-index: 1;
+}
+
+help{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .tow-service-container {
+        padding: 15px;
+        margin: 20px 10px;
+    }
+    
+    .tow-header h1 {
+        font-size: 2rem;
+    }
+    
+    .tow-header h3 {
+        font-size: 1rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .tow-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tow-header h1 {
+        font-size: 1.7rem;
+    }
+    
+    .contact-item {
+        width: 100%;
+    }
+    
+    .tow-image {
+        height: 200px;
+    }
+}

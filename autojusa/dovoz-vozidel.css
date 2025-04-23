@@ -1,0 +1,126 @@
+
+:root {
+    --light-color: #e8f7f6;
+    --shadow: 0 4px 6px rgba(32, 178, 170, 0.1);
+    --transition: all 0.3s ease;
+  }
+  
+  .cenik-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  
+  .cenik-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+  }
+
+  .cenik-heading {
+    color: #20B2AA;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    position: relative;
+  }
+  
+  .cenik-heading::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 80px;
+    background-color:#20B2AA;
+    border-radius: 2px;
+  }
+
+  .cenik-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .cenik-table tr {
+    transition: var(--transition);
+  }
+  
+  .cenik-table tr:nth-child(odd) {
+    background-color: var(--light-color);
+  }
+  
+  .cenik-table tr:hover {
+    background-color: rgba(32, 178, 170, 0.1);
+  }
+  
+  .cenik-table td {
+    padding: 1.2rem 1.5rem;
+    border-bottom: 1px solid rgba(32, 178, 170, 0.2);
+  }
+  
+  .cenik-service {
+    font-weight: 500;
+  }
+  
+  .cenik-price {
+    font-weight: 700;
+    color: #20B2AA;
+    text-align: right;
+    font-size: 1.1rem;
+  }
+
+  .price-note {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .price-note i {
+    margin-right: 5px;
+    color: #20B2AA;
+  }
+  
+
+  @media (max-width: 768px) {
+    .cenik-section {
+      padding: 1.5rem;
+      margin: 2rem 1rem;
+    }
+    
+    .cenik-heading {
+      font-size: 1.8rem;
+    }
+    
+    .cenik-table td {
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cenik-heading {
+      font-size: 1.5rem;
+    }
+    
+    .cenik-table td {
+      padding: 0.8rem;
+      font-size: 0.95rem;
+    }
+    
+    .cenik-price {
+      font-size: 1rem;
+    }
+  }

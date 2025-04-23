@@ -1,0 +1,229 @@
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    margin-top: 150px !important;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.header-section {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-section h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.header-section h3 {
+    font-size: 1.2rem;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #20B2AA;
+    opacity: 0.3;
+    margin: 30px 0;
+}
+
+.packages-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.package {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.package:hover {
+    transform: translateY(-5px);
+}
+
+.package-info {
+    flex: 1;
+    padding: 25px;
+    background-color: rgba(32, 178, 170, 0.05);
+    border-right: 1px solid rgba(32, 178, 170, 0.2);
+}
+
+.package-info h1 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.package-info h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.package-info h3 {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.package-info span {
+    display: block;
+    padding: 15px;
+    background-color: rgba(32, 178, 170, 0.1);
+    border-radius: 5px;
+    font-size: 1.05rem;
+}
+
+.package-info span strong {
+    color: #20B2AA;
+    margin-right: 8px;
+}
+
+.package-content {
+    flex: 1;
+    padding: 25px;
+    background-color: white;
+}
+
+.package-content h1 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.package-content p {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.package-content i {
+    color: #20B2AA;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    min-width: 20px;
+}
+
+.package-premium .package-info {
+    background-color: rgba(32, 178, 170, 0.1);
+    position: relative;
+}
+
+.package-premium .package-info:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #20B2AA;
+}
+
+.package-premium .package-info h1 {
+    color: #333;
+}
+
+.package-standard .package-info {
+    background-color: rgba(32, 178, 170, 0.05);
+}
+
+.package-basic .package-info {
+    background-color: rgba(32, 178, 170, 0.02);
+}
+
+help{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .package {
+        flex-direction: column;
+    }
+    
+    .package-info {
+        border-right: none;
+        border-bottom: 1px solid rgba(32, 178, 170, 0.2);
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+        margin: 20px 10px;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    .package-info, 
+    .package-content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .package-info h1 {
+        font-size: 1.4rem;
+    }
+    
+    .package-info h2 {
+        font-size: 1.2rem;
+    }
+    
+    .package-content h1 {
+        font-size: 1.2rem;
+    }
+    
+    .header-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .header-section h3 {
+        font-size: 1rem;
+    }
+}
